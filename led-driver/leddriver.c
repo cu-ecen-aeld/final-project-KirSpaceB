@@ -1,4 +1,3 @@
-cat > leddriver.c << 'EOF'
 /**
  * @file leddriver.c
  * @brief Linux kernel character device driver for GPIO LED control
@@ -171,4 +170,3 @@ static void led_cleanup_module(void) {
 
 module_init(led_init_module);
 module_exit(led_cleanup_module);
-EOF
