@@ -1,4 +1,3 @@
-cat > Makefile << 'EOF'
 obj-m := leddriver.o
 
 SRC := $(shell pwd)
@@ -8,4 +7,3 @@ all:
 
 clean:
 	$(MAKE) -C $(KERNEL_SRC) M=$(SRC) clean
-EOF
